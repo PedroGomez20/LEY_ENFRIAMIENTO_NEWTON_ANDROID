@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FAF8F8</color>
+    <color name="tittle">#0B0A0A</color>
     <color name="ecuacion">#192A8E</color>
+    <color name="respuesta">#C81609</color>
+    <color name="tema_claro">#009688</color>
+    <color name="LETRAS_tema_claro">#171717</color>
+    <color name="LETRAS_bootn_claro">#0C0C0C</color>
+
+
+
+
+    <!--oscuro -->
+    <color name="black">#BF000000</color>
+    <color name="tema_oscuro">#FF9800</color>
+    <color name="LETRAS_OSCURO">#E4D01B</color>
+    <color name="LETRAS_bootn_OSCURO">#DC28AD10</color>
 </resources>

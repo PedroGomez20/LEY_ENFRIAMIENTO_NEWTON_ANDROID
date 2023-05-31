@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">LEY DE ENFRIAMIENTO DE NEWTON</string>
     <string name="TITULO_ENTRAD">LEY DE ENFRIAMIENTO DE NEWTON</string>
-    <string name="TITULO_ENTRAD_portada">CALCULADORA "LEY DE ENFRIAMIENTO DE NEWTON"</string>
+    <string name="TITULO_ENTRAD_portada">CALCULADORA DE LA "LEY DE ENFRIAMIENTO DE NEWTON"</string>
     <string name="TIEMPO1">tiempo 1 =</string>
     <string name="TIEMPO2">tiempo 2 =</string>
     <string name="TEMPE">Tem 1 =</string>
     <string name="TEMPE2">Tem 2 =</string>
     <string name="TEM_AMBIENTE">Tem. Ambiente =</string>
-    <string name="BTN_IR">IR A CALCULAR</string>
+    <string name="BTN_IR">CALCULAR</string>
+    <string name="BTN_Inicio">INICIAR</string>
+    <string name="BTN_FINAL">SALIR</string>
     <string name="DATOS_PREGUNTAS"> a) HALLAR LA TEMPERATURA DESPUES DE: </string>
     <string name="DATOS_PREGUNTAS_TIEMPO"> MINUTOS</string>
     <string name="DATOS_PREGUNTAS_tiempo_DIAL">b) HALLAR EL TIEMPO. (TEMPERATURA IDEAL DE: </string>

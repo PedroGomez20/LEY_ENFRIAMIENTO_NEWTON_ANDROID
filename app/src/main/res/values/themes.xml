@@ -2,8 +2,17 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.LEYDEENFRIAMIENTODENEWTON" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/tema_claro</item>
     </style>
+
+    <style name="TEXTO_GENERAL">
+        <item name="android:textColor">@color/tittle</item>
+    </style>
+
+    <style name="TEXTO_botton">
+        <item name="android:textColor">@color/LETRAS_bootn_claro</item>
+    </style>
+
 
     <style name="Theme.LEYDEENFRIAMIENTODENEWTON" parent="Base.Theme.LEYDEENFRIAMIENTODENEWTON" />
 </resources>
