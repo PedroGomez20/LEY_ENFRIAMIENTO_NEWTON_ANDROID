@@ -7,12 +7,13 @@
     <string name="TEMPE">Tem 1 =</string>
     <string name="TEMPE2">Tem 2 =</string>
     <string name="TEM_AMBIENTE">Tem. Ambiente =</string>
-    <string name="BTN_IR">CALCULAR</string>
+    <string name="BTN_IR">GENERAR FUNCION</string>
     <string name="BTN_Inicio">INICIAR</string>
+    <string name="BTN_TEM">GENERAR</string>
     <string name="BTN_FINAL">SALIR</string>
-    <string name="DATOS_PREGUNTAS"> a) HALLAR LA TEMPERATURA DESPUES DE: </string>
-    <string name="DATOS_PREGUNTAS_TIEMPO"> MINUTOS</string>
-    <string name="DATOS_PREGUNTAS_tiempo_DIAL">b) HALLAR EL TIEMPO. (TEMPERATURA IDEAL DE: </string>
+    <string name="DATOS_PREGUNTAS"> LA TEMPERATURA DESPUES DE: </string>
+    <string name="DATOS_PREGUNTAS_TIEMPO"> Min.</string>
+    <string name="DATOS_PREGUNTAS_tiempo_DIAL"> EL TIEMPO. (TEMPERATURA IDEAL DE: </string>
     <string name="DATOS_PREGUNTAS_TEMPE_IDEL"> C. )</string>
     <string name="ecua1"> T(t)= </string>
 

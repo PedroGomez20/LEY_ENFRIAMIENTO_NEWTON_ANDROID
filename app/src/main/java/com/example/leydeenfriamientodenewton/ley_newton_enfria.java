@@ -90,8 +90,7 @@ public class ley_newton_enfria extends AppCompatActivity {
         T1 = Float.parseFloat(cajaT1.getText().toString());
         T2 = Float.parseFloat(cajaT2.getText().toString());
         Tm = Float.parseFloat(cajaTm.getText().toString());
-        tnew = Float.parseFloat(caja_tiem.getText().toString());
-        Tnew = Float.parseFloat(caja_Tem_ideal.getText().toString());
+
 
 
 
@@ -150,7 +149,7 @@ public class ley_newton_enfria extends AppCompatActivity {
                 //VALOR DE C TENIDNDO VALOR DE K SIMPLIFICAR
 
 
-                res_a.setText("a)= "+k);
+
 
 
                 c=(TemOper*(Math.exp(t_deno_num*k)));
@@ -167,25 +166,9 @@ public class ley_newton_enfria extends AppCompatActivity {
 
             }
 
-            double  paso4;
-
-            //opcion a respuesta
-
-            paso4= c*Math.exp(((k)*(tnew)))+Tm;
-            res_a.setText("a)= "+df.format(paso4));
 
 
-            //OPCION B RESPUESTA
-            double paso5 , sim, elim_euler,e3,add_log_sim, t;
-            paso5=Tnew-Tm;
-            sim=paso5/c;
-            e3=Math.exp(k);
 
-            elim_euler=Math.log(e3);
-            add_log_sim=Math.log(sim);
-            t=((add_log_sim)/elim_euler);
-
-            res_b.setText("b)= "+df.format(t));
 
         } else  if (T1 < T2 && T2 < Tm ) {
         if (t1 ==0){
@@ -208,6 +191,13 @@ public class ley_newton_enfria extends AppCompatActivity {
             k=(((log(paso2))/elim_e));
 
 
+            if (Tm >0){
+                String convertirigno= String.valueOf("+"+Tm);
+                ecuacion_generada.setText("FUNCIÓN: T(t)= "+df.format(c)+"(e^"+df.format(k) +" t) "+ convertirigno);
+            } else if (Tm <0) {
+                String convertirigno= String.valueOf(Tm);
+                ecuacion_generada.setText("FUNCIÓN: T(t)= "+df.format(c)+"(e^"+df.format(k) +" t) "+ convertirigno);
+            }
 
 
 
@@ -238,36 +228,29 @@ public class ley_newton_enfria extends AppCompatActivity {
             //VALOR DE C TENIDNDO VALOR DE K SIMPLIFICAR
 
 
-            res_a.setText("a)= "+k);
+
 
 
             c=(TemOper*(Math.exp(t_deno_num*k)));
 
+            if (Tm >0){
+                String convertirigno= String.valueOf("+"+Tm);
+                ecuacion_generada.setText("FUNCIÓN: T(t)= "+df.format(c)+"(e^"+df.format(k) +" t) "+ convertirigno);
+            } else if (Tm <0) {
+                String convertirigno= String.valueOf(Tm);
+                ecuacion_generada.setText("FUNCIÓN: T(t)= "+df.format(c)+"(e^"+df.format(k) +" t) "+ convertirigno);
+            }
 
 
 
 
         }
 
-        double  paso4;
-
-        //opcion a respuesta
-
-        paso4= c*Math.exp(((k)*(tnew)))+Tm;
-        res_a.setText("a)= "+df.format(paso4));
 
 
-        //OPCION B RESPUESTA
-        double paso5 , sim, elim_euler,e3,add_log_sim, t;
-        paso5=Tnew-Tm;
-        sim=paso5/c;
-        e3=Math.exp(k);
 
-        elim_euler=Math.log(e3);
-        add_log_sim=Math.log(sim);
-        t=((add_log_sim)/elim_euler);
 
-        res_b.setText("b)= "+df.format(t));
+
 
             }else {
                 AlertDialog.Builder alerta = new AlertDialog.Builder(this);
@@ -313,5 +296,42 @@ public class ley_newton_enfria extends AppCompatActivity {
         Intent menu = new Intent(this, MainActivity.class);
         startActivity(menu);
     }
+
+    public void temperatura(View view){
+        try{
+
+
+        tnew = Float.parseFloat(caja_tiem.getText().toString());
+
+        double  paso4;
+
+        //opcion a respuesta
+
+        paso4= c*Math.exp(((k)*(tnew)))+Tm;
+        res_a.setText(""+df.format(paso4)+"  c");
+        }catch (Exception e){
+            Toast.makeText(this,"LLENA TODOS LOS CAMPOS", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    public void TIMEPO(View view){
+        try{
+        Tnew = Float.parseFloat(caja_Tem_ideal.getText().toString());
+        //OPCION B RESPUESTA
+        double paso5 , sim, elim_euler,e3,add_log_sim, t;
+        paso5=Tnew-Tm;
+        sim=paso5/c;
+        e3=Math.exp(k);
+
+        elim_euler=Math.log(e3);
+        add_log_sim=Math.log(sim);
+        t=((add_log_sim)/elim_euler);
+        res_b.setText(""+df.format(t)+"Min.");
+        }catch (Exception e){
+            Toast.makeText(this,"LLENA TODOS LOS CAMPOS", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
 }
